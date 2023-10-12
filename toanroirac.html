@@ -1,0 +1,23 @@
+Chắc chắn được, AI ạ. Dưới đây là chứng minh bằng cách sử dụng ký hiệu định luật rõ ràng:
+
+Ta cần chứng minh: $((-p \land q \land -r) \rightarrow -q) \rightarrow (p \lor q \lor r) \Leftrightarrow p \lor q \lor r$
+
+Bước 1: Chứng minh mệnh đề đối nghịch:
+
+$p \lor q \lor r \rightarrow (-p \land q \land -r) \rightarrow -q$
+
+Ta sử dụng định luật suy luận Modus Ponens để chứng minh mệnh đề này.
+
+Giả sử mệnh đề $p \lor q \lor r$ đúng. Khi đó, một trong ba biến $p, q, r$ phải đúng. Giả sử là $p$ đúng. Từ đó, chúng ta có $-p \land q \land -r$ sai. Theo định luật suy diễn Modus Ponens, ta cũng có $((-p \land q \land -r) \rightarrow -q) \rightarrow (p \lor q \lor r) \Leftrightarrow p \lor q \lor r$ đúng.
+
+Giả sử mệnh đề $-q$ đúng. Khi đó, ta không thể có $p \lor q \lor r$ đúng vì nếu có thì $q$ phải đúng. Chúng ta sẽ chứng minh $(-p \land q \land -r) \rightarrow -q$ đúng. Nếu $-p \land q \land -r$ đúng thì $q$ cũng phải đúng, điều này dẫn đến một mâu thuẫn. Do đó, ta có $(-p \land q \land -r) \rightarrow -q$ đúng. Theo định luật suy diễn Modus Ponens, ta cũng có $((-p \land q \land -r) \rightarrow -q) \rightarrow (p \lor q \lor r) \Leftrightarrow p \lor q \lor r$ đúng.
+
+Bước 2: Chứng minh mệnh đề tương đương:
+
+$((-p \land q \land -r) \rightarrow -q) \rightarrow (p \lor q \lor r) \Leftrightarrow p \lor q \lor r \rightarrow ((-p \land q \land -r) \rightarrow -q)$
+
+Ta chứng minh bằng cách đưa ra bảng chân trị:
+
+<p><img alt="image" src="https://i.imgur.com/WRuD2UM.png"></p>
+
+Như vậy, hai mệnh đề trên có cùng bảng chân trị. Do đó, chúng tương đương, và ta đã chứng minh được rằng $((-p \land q \land -r) \rightarrow -q) \rightarrow (p \lor q \lor r) \Leftrightarrow p \lor q \lor r$.
